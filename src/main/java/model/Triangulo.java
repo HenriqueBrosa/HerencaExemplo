@@ -15,18 +15,38 @@ public class Triangulo extends FiguraGeometrica {
     }
     public double getBase() { return base; }
     
+    
+    /**
+         * Método modificador da altura.
+         * Recebe uma altura como parâmetro para modificar a altura do triângulo.
+         * @param raio Double.
+         */
     public void setBase(double base) { this.base = base; }
     
+    /**
+         * Método modificador da base.
+         * Recebe uma altura como parâmetro para modificar a base do triângulo.
+         * @param raio Uma String para ser convertida para double.
+         */
     public void setBase(String base) { 
         this.base = Double.parseDouble(base); 
     }
     
     public double getAltura() { return altura; }
     
+    /**
+         * Método modificador da altura.
+         * Recebe uma altura como parâmetro para modificar a altura do triângulo.
+         * @param raio Double.
+         */
     public void setAltura(double altura) { 
         this.altura = altura; 
     }
-
+    /**
+         * Método modificador da Altura.
+         * Recebe uma altura como parâmetro para modificar a altura do triângulo.
+         * @param raio Uma String para ser convertida para double.
+         */
     public void setAltura(String altura) { 
         this.altura = Double.parseDouble(altura); 
     }

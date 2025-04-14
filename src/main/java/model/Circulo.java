@@ -13,10 +13,19 @@ public class Circulo extends FiguraGeometrica {
     public double getRaio() {
         return raio;
     }
+        /**
+         * Método modificador da Raio.
+         * Recebe uma altura como parâmetro para modificar o Raio do Circulo.
+         * @param raio Double.
+         */
         public void setRaio(double raio) {
         this.raio = raio;
     }
-    
+        /**
+         * Método modificador da Raio.
+         * Recebe uma altura como parâmetro para modificar o Raio do Circulo
+         * @param raio Uma String para ser convertida para double.
+         */
         public void setRaio(String raio) {
         this.raio = Double.parseDouble(raio);
     }
