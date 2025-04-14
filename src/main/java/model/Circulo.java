@@ -30,14 +30,17 @@ public class Circulo extends FiguraGeometrica {
         this.raio = Double.parseDouble(raio);
     }
     
+    @Override
     public void leitura() {
         super.leitura();
         setRaio (JOptionPane.showInputDialog("Digite o raio"));
     }
+    @Override
     public void imprimir() {
         super.imprimir();
         JOptionPane.showMessageDialog(null,"O raio é " + getRaio());
     }
+    @Override
     public String paraString() {
         return (super.paraString() + "/ Raio : " + getRaio());
     }

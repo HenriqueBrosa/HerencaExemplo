@@ -51,16 +51,19 @@ public class Triangulo extends FiguraGeometrica {
         this.altura = Double.parseDouble(altura); 
     }
     
+    @Override
     public void leitura() {
         super.leitura();
         setBase (JOptionPane.showInputDialog("Digite a base"));
         setAltura (JOptionPane.showInputDialog("Digite a altura"));
     }
+    @Override
     public void imprimir() {
         super.imprimir();
         JOptionPane.showMessageDialog(null,"A base é " + getBase());
         JOptionPane.showMessageDialog(null,"A Altura é " + getAltura());
     }
+    @Override
     public String paraString() {
         return (super.paraString() + "/ Base : " + getBase() + "/ Altura :" + getAltura());
     }
