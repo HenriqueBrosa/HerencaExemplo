@@ -23,7 +23,7 @@ public class Circulo extends FiguraGeometrica {
     
     public void leitura() {
         super.leitura();
-        setRaio(Double.parseDouble(JOptionPane.showInputDialog("Digite o raio")));
+        setRaio (JOptionPane.showInputDialog("Digite o raio"));
     }
     public void imprimir() {
         super.imprimir();
