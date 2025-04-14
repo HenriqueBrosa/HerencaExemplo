@@ -14,14 +14,27 @@ public class Triangulo extends FiguraGeometrica {
         setAltura(altura);
     }
     public double getBase() { return base; }
+    
     public void setBase(double base) { this.base = base; }
+    
+    public void setBase(String base) { 
+        this.base = Double.parseDouble(base); 
+    }
+    
     public double getAltura() { return altura; }
-    public void setAltura(double altura) { this.altura = altura; }
+    
+    public void setAltura(double altura) { 
+        this.altura = altura; 
+    }
 
+    public void setAltura(String altura) { 
+        this.altura = Double.parseDouble(altura); 
+    }
+    
     public void leitura() {
         super.leitura();
-        setBase(Double.parseDouble(JOptionPane.showInputDialog("Digite a base")));
-        setAltura(Double.parseDouble(JOptionPane.showInputDialog("Digite a altura")));
+        setBase (JOptionPane.showInputDialog("Digite a base"));
+        setAltura (JOptionPane.showInputDialog("Digite a altura"));
     }
     public void imprimir() {
         super.imprimir();
